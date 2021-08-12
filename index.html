@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="./script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="body">
+      <div class="image">
+        <img id="woman" src="./images/illustration-woman-online-desktop.svg" alt="">
+      </div>
+      <img id="woman-mobile" src="./images/illustration-woman-online-mobile.svg" alt="">
+      <img id="shadow" src="./images/bg-pattern-mobile.svg" alt="">
+      <img id="box" src="./images/illustration-box-desktop.svg" alt="">
+      <div data-js="accordion" class="text">
+        <h1>FAQ</h1>
+
+        <button data-accordion-header="1" class="accordion" id="01" data-js="accordion-header">How many team members can
+          I invite?</button>
+
+        <img data-accordion-header="1" id="arrow" src="./images/icon-arrow-down.svg" alt="">
+
+        <p data-accordion-body="1" data-accordion-header="1" class="description">You can invite up to 2 additional users
+          on the Free plan. There is no limit on
+          team members for the Premium plan.</p>
+        <hr>
+        <button data-accordion-header="2" class="accordion" id="02" data-js="accordion-header">What is the maximum file
+          upload size?</button>
+
+        <img data-accordion-header="2" id="arrow" src="./images/icon-arrow-down.svg" alt="">
+
+        <p data-accordion-body="2" data-accordion-header="2" class="description">No more than 2GB. All files in your
+          account must fit your allotted storage space.</p>
+        <hr>
+
+        <button data-accordion-header="3" class="accordion" id="03" data-js="accordion-header">How do I reset my
+          password?</button>
+
+        <img data-accordion-header="3" id="arrow" src="./images/icon-arrow-down.svg" alt="">
+
+        <p data-accordion-body="3" data-accordion-header="3" class="description" id="d05">Click “Forgot password” from
+          the login page or “Change password” from your
+          profile page.
+          A reset link will be
+          emailed to you.</p>
+        <hr>
+        <button data-accordion-header="4" class="accordion" id="04" data-js="accordion-header">Can I cancel my
+          subscription?</button>
+
+        <img data-accordion-header="4" id="arrow" src="./images/icon-arrow-down.svg" alt="">
+
+        <p data-accordion-body="4" data-accordion-header="4" class="description">Yes! Send us a message and we’ll
+          process your request no questions asked.</p>
+        <hr>
+        <button data-accordion-header="5" class="accordion" id="05" data-js="accordion-header">Do you provide additional
+          support?</button>
+
+        <img data-accordion-header="5" id="arrow" src="./images/icon-arrow-down.svg" alt="">
+        <hr>
+        <p data-accordion-body="5" data-accordion-header="5" class="description">Chat and email support is available
+          24/7. Phone lines are open during normal business
+          hours.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

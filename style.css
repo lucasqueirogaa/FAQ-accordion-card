@@ -1,0 +1,177 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+html{
+    height: 100%;
+    background-image: linear-gradient( hsl(273, 75%, 66%), 
+    hsl(240, 73%, 65%));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    width: 900px;
+    height: 450px;
+    background-color: white;
+    border-radius: 13px;
+    overflow: hidden;
+    margin-top: 17%;
+}
+
+#woman{
+    position: relative;
+    margin-left: -70px;
+    margin-top: 6%;
+}
+
+#box{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: -110px;
+}
+
+.text{
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 480px;
+    width: 400px;
+}
+
+.accordion{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.text h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: -25px;
+}
+
+.text button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 14px;
+    padding: 10px;
+    width: 90%;
+    font-weight: 500;
+    background-color: white;
+    background-color: rgba(187, 187, 187, 0.151);
+}
+
+.text button:hover{
+    color: rgb(230, 84, 31);
+}
+
+.text .description{
+    width: 89%;
+    display: none;
+    font-size: 16px;
+}
+
+#arrow{
+    cursor: pointer;
+    
+}
+
+hr{
+    width: 94%;
+    height: 1px;
+    background-color: rgba(187, 187, 187, 0.774);
+    border: none;
+    margin-top: -3px;
+    margin-bottom: 8px;
+}
+
+.accordion.active{
+    font-weight: 700;
+}
+
+.description.active{
+    display: block;
+    margin-top: -12px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+#arrow.active{
+    background-color: red;
+}
+
+#woman-mobile{
+    display: none;
+}
+
+#shadow{
+    display: none;
+}
+
+@media (max-width: 1025px){
+    #woman-mobile{
+        display: unset;
+        position: relative;
+        width: 300px;
+        margin-top: -130px;
+        margin-left: 20px;
+    }
+    .body{
+        width: 370px;
+        height: 550px;
+        background-color: white;
+        border-radius: 13px;
+        overflow: unset;
+        margin-top: 55%;
+    }
+
+    #box{
+        display: none;
+    }
+
+    #woman{
+    display: none;
+    }
+
+    .text{
+        margin-top: 60px;
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .text h1{
+        margin-left: 38%;
+    }
+
+    .text button{
+        width: 330px;
+        background-color: white;
+    }
+
+    #arrow{
+        margin-left: -10px;
+    }
+
+    hr{
+        width: 330px;
+    }
+
+    #shadow{
+        display: unset;
+        position: relative;
+        margin-top: -80px;
+        margin-left: 70px;
+    }
+}
